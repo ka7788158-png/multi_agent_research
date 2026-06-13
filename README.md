@@ -54,3 +54,26 @@ Get the multi-agent environment running locally in just a few steps.
 ```bash
 git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
 cd your-repo-name
+```
+### 2. Set Up a Virtual Environment
+It is strictly recommended to use an isolated environment to manage dependencies.
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: `venv\Scripts\activate`
+````
+### 3. Install Dependencies
+Install the required packages for the agent loops, vector database, and UI framework.
+```bash
+pip install -r requirements.txt
+```
+### 4. Configure Environment Variables
+Create a .env file in the root directory to store your API credentials securely.
+```bash
+MISTRAL_API_KEY="your_mistral_api_key_here"
+# Add other necessary keys, such as a GitHub Personal Access Token if querying remote repos
+```
+### 5. 5. Run the Application
+Launch the interactive web interface to start testing the agents.
+```bash
+streamlit run app.py
+```

@@ -42,3 +42,15 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Quick Start
+
+Get the multi-agent environment running locally in just a few steps. 
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+cd your-repo-name

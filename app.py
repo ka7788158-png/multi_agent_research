@@ -1,6 +1,7 @@
 import streamlit as st
 import time
 from agents import build_reader_agent, build_search_agent, writer_chain, critic_chain
+import os
 
 if "MISTRAL_API_KEY" in st.secrets:
     os.environ["MISTRAL_API_KEY"] = st.secrets["MISTRAL_API_KEY"]
